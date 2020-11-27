@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d13952e0-fdbb-43c6-b291-1ee7d9be4fbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="d13952e0-fdbb-43c6-b291-1ee7d9be4fbd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +151,7 @@
       <updated>1605862743163</updated>
       <workItem from="1605862744314" duration="3438000" />
       <workItem from="1606463869437" duration="27000" />
-      <workItem from="1606463908671" duration="2596000" />
+      <workItem from="1606463908671" duration="3277000" />
     </task>
     <servers />
   </component>
@@ -166,9 +163,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1184" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606466859662" />
-    <state x="920" y="167" key="SettingsEditor" timestamp="1606467495265">
+    <state x="920" y="167" key="SettingsEditor" timestamp="1606467937912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="920" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606467495265" />
+    <state x="920" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606467937912" />
   </component>
 </project>
