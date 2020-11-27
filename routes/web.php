@@ -25,4 +25,4 @@ Route::post('/pennies/verwerken', 'PennyController@handlePennyForm');
 // verzameling memodailles
 Route::get('/memodailles', 'CoinController@getCoins');
 Route::get('/memodailles/voeg-toe', 'CoinController@addCoinForm');
-Route::post('/memodailles/verwerken', 'CoinController@handleCoinForm')
+Route::post('/memodailles/verwerken', 'CoinController@handleCoinForm');
