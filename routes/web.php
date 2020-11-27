@@ -17,3 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/over-mij', 'AboutController@aboutMe');
+// verzameling pennies routes
+Route::get('/pennies', 'PennyController@getPennies');
+Route::get('/pennies/voeg-toe', 'PennyController@addPennyForm');
+Route::post('/pennies/verwerken', 'PennyController@handlePennyForm');
+
+// verzameling memodailles
+Route::get('/memodailles', 'CoinController@getCoins');
+Route::get('/memodailles/voeg-toe', 'CoinController@addCoinForm');
+Route::post('/memodailles/verwerken', 'CoinController@handleCoinForm')
