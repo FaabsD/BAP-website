@@ -21,8 +21,18 @@ Route::get('/over-mij', 'AboutController@aboutMe');
 Route::get('/pennies', 'PennyController@getPennies');
 Route::get('/pennies/voeg-toe', 'PennyController@addPennyForm');
 Route::post('/pennies/verwerken', 'PennyController@handlePennyForm');
+Route::get('/pennies/aanpassen/{id}', 'PennyController@updatePenny');
+// haal de pennies op bij alfabet
+Route::get('pennies/{alphabet}', 'PennyController@getByAlphabet');
+// toon pennies bij opgegeven plaats
+Route::get('/pennies/plaats/{town}', 'PennyController@getByTown');
 
 // verzameling memodailles
 Route::get('/memodailles', 'CoinController@getCoins');
 Route::get('/memodailles/voeg-toe', 'CoinController@addCoinForm');
 Route::post('/memodailles/verwerken', 'CoinController@handleCoinForm');
+Route::get('/memodailles/aanpassen/{id}', 'CoinController@updateCoin');
+// haal de memodailles op bij alfabet
+Route::get('memodailles/{alphabet}', 'CoinController@getByAlphabet');
+// toon de memodailles bij de opgegeven plaats
+Route::get('/memodailles/plaats/{town}', 'PennyController@getByTown');
