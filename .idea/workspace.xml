@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d13952e0-fdbb-43c6-b291-1ee7d9be4fbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CoinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CoinController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PennyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PennyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,37 +174,49 @@
       <updated>1605862743163</updated>
       <workItem from="1605862744314" duration="3438000" />
       <workItem from="1606463869437" duration="27000" />
-      <workItem from="1606463908671" duration="5983000" />
+      <workItem from="1606463908671" duration="6446000" />
+      <workItem from="1607069100197" duration="11674000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="1184" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606466859662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1184" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606466859662" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1606469948191">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1606471809893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606469948191" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1606469948191">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606471809893" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1606471809892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606469948191" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1606469948191">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606471809892" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1606471809892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606469948191" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1606469948191">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606471809892" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1606471809893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606469948191" />
-    <state x="920" y="167" key="SettingsEditor" timestamp="1606467937912">
+    <state width="1875" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606471809893" />
+    <state x="920" y="167" key="SettingsEditor" timestamp="1607100674978">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="920" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606467937912" />
+    <state x="920" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607100674978" />
   </component>
 </project>
