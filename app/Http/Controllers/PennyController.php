@@ -15,7 +15,13 @@ class PennyController extends Controller
     public function handlePennyForm(){
         return "hier ga ik het formulier verwerken";
     }
-    public function updatePenny() {
-        return "vanaf hier wil ik de gegevens van de penny aanpassen";
+    public function updatePenny($id) {
+        return "vanaf hier wil ik de gegevens van de penny met id: ".$id."aanpassen";
+    }
+    public function getByAlphabet($alphabet) {
+        return "alle pennies waarvan de plaats begint met ".$alphabet;
+    }
+    public function getByTown($town) {
+        return "Toon alle Pennies uit ".$town;
     }
 }

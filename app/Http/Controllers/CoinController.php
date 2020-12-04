@@ -15,7 +15,13 @@ class CoinController extends Controller
     public function handleCoinForm(){
         // hier wordt het toevoegen van een memodaille afgehandeld
     }
-    public function updateCoin() {
-        return "hier update ik de gegevens van een memodaille";
+    public function updateCoin($id) {
+        return "hier update ik de gegevens van een memodaille met id: ".$id;
+    }
+    public function getByAlphabet($alphabet) {
+        return "Alle memodailles waarvan de plaats begint met " . $alphabet;
+    }
+    public function getByTown($town) {
+        return "Toon alle Memodailles uit ".$town;
     }
 }
