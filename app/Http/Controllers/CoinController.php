@@ -15,4 +15,7 @@ class CoinController extends Controller
     public function handleCoinForm(){
         // hier wordt het toevoegen van een memodaille afgehandeld
     }
+    public function updateCoin() {
+        return "hier update ik de gegevens van een memodaille";
+    }
 }

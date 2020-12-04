@@ -10,9 +10,12 @@ class PennyController extends Controller
         return "Hier verschijnt mijn penny verzameling";
     }
     public function addPennyForm(){
-        return "Hier komt het formulier om een penny toe te voegen";
+        return view('penny.form');
     }
     public function handlePennyForm(){
-        // hier ga ik het formulier verwerken
+        return "hier ga ik het formulier verwerken";
+    }
+    public function updatePenny() {
+        return "vanaf hier wil ik de gegevens van de penny aanpassen";
     }
 }
