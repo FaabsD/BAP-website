@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,6 +9,10 @@
     <title>@yield("page_title")</title>
 </head>
 <body>
+<header class="w-screen py-6 bg-blue-200 text-center">
+    <h1 class="text-black text-4xl">Pressed Penny verzameling</h1>
+    <h3>Familie Tuijn & Kleinkinderen</h3>
+</header>
 @yield("content")
 
 </body>
