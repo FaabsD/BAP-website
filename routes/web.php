@@ -41,3 +41,7 @@ Route::get('/memodailles/plaats/{town}', 'PennyController@getByTown')->name('coi
 
 // login route
 Route::get('/login', 'LoginController@getLoginForm')->name('login');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
