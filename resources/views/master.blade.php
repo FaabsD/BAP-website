@@ -11,7 +11,7 @@
 <body>
 <header class="w-screen py-6 bg-blue-200 text-center">
     <h1 class="text-black text-4xl">Pressed Penny verzameling</h1>
-    <h3>Familie Tuijn & Kleinkinderen</h3>
+    <h3 class="text-xl">Familie Tuijn & Kleinkinderen</h3>
 </header>
 @yield("content")
 
