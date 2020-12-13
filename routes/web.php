@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/over-mij', 'AboutController@aboutMe');
+Route::get('/over-ons', 'AboutController@aboutMe')->name('about');
 // verzameling pennies routes
 Route::get('/pennies', 'PennyController@getPennies')->name('pennies');
 // alleen beschikbaar voor ingelogde beheerder
