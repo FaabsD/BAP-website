@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d13952e0-fdbb-43c6-b291-1ee7d9be4fbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +187,7 @@
       <workItem from="1607069100197" duration="12261000" />
       <workItem from="1607185014315" duration="6164000" />
       <workItem from="1607672596430" duration="6710000" />
+      <workItem from="1607875432956" duration="11527000" />
     </task>
     <servers />
   </component>
@@ -227,5 +231,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="920" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607100674978" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1607881189039">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607881189039" />
   </component>
 </project>
