@@ -17,23 +17,23 @@
                 @endauth
             </div>
         @endif--}}
-    <main class="grid grid-cols-2 gap-4 overflow-hidden">
-        <section class="col-span-full text-center py-4">
-            <h2 class="text-2xl">Welkom wat wilt u bekijken?</h2>
+    <main class="welcome">
+        <section class="welcome__section1">
+            <h2 class="section1__head">Welkom wat wilt u bekijken?</h2>
         </section>
-        <section class="text-center grid auto-rows-auto gap-2">
-            <h3 class="text-xl font-semibold">Penny verzameling</h3>
-            <a href="{{route('pennies')}}" class="block">
+        <section class="welcome__section2">
+            <h3 class="section2__head">Penny verzameling</h3>
+            <a href="{{route('pennies')}}" class="section2__link">
                 <img src="{{ asset('images/penny.jpg') }}" alt="Pressed penny"
-                     class="w-full h-full lg:w-3/4 lg:h-3/4  object-cover m-auto">
+                     class="section2__img">
             </a>
         </section>
-        <section class="text-center grid auto-cols-auto gap-2">
-            <h3 class="text-xl font-semibold">Memodaille verzameling</h3>
+        <section class="welcome__section3">
+            <h3 class="section3__head">Memodaille verzameling</h3>
 
-            <a href="{{ route('coins') }}" class="block">
+            <a href="{{ route('coins') }}" class="section3__link">
                 <img src="{{ asset('images/Memodaille.jpg') }}" alt="Memodaille"
-                     class="w-full h-full lg:w-3/4 lg:h-3/4 object-contain m-auto">
+                     class="section3__img">
             </a>
         </section>
     </main>
