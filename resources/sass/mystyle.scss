@@ -1,0 +1,53 @@
+ /* eigen stijl */
+ header {
+     text-align: center;
+     background-color: lighten(teal, 10%);
+ }
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .welcome__section1 {
+        grid-column: 1/-1;
+        text-align: center;
+
+        .section1__head {
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+
+    .welcome__section2 {
+        text-align: center;
+
+        .section2__head {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .section2__link {
+            .section2__img {
+                width: 75%;
+                object-fit: contain;
+            }
+        }
+
+    }
+
+    .welcome__section3 {
+        text-align: center;
+
+        .section3__head {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .section3__link {
+            .section3__img {
+                width: 75%;
+                object-fit: contain;
+            }
+        }
+    }
+}
