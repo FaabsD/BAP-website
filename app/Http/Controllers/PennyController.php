@@ -28,7 +28,7 @@ class PennyController extends Controller
     }
 
     public function getByAlphabet($alphabet) {
-        return "alle pennies waarvan de plaats begint met ".$alphabet;
+        return view('penny.alphabetical')->with('alphabet',$alphabet);
     }
 
     public function getByTown($town) {
