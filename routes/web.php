@@ -24,7 +24,7 @@ Route::get('/pennies/voeg-toe', 'PennyController@addPennyForm')->name('penny.add
 Route::post('/pennies/verwerken', 'PennyController@handlePennyForm')->name('penny.add.handle');
 Route::get('/pennies/aanpassen/{id}', 'PennyController@updatePenny')->name('penny.update');
 // haal de pennies op bij alfabet
-Route::get('pennies/{alphabet}', 'PennyController@getByAlphabet')->name('pennies.alphabet');
+Route::get('pennies/alfabetisch/{alphabet}', 'PennyController@getByAlphabet')->name('pennies.alphabet');
 // toon pennies bij opgegeven plaats
 Route::get('/pennies/plaats/{town}', 'PennyController@getByTown')->name('pennies.town');
 
@@ -35,7 +35,7 @@ Route::get('/memodailles/voeg-toe', 'CoinController@addCoinForm')->name('coin.ad
 Route::post('/memodailles/verwerken', 'CoinController@handleCoinForm')->name('coin.add.handle');
 Route::get('/memodailles/aanpassen/{id}', 'CoinController@updateCoin')->name('coin.update');
 // haal de memodailles op bij alfabet
-Route::get('memodailles/{alphabet}', 'CoinController@getByAlphabet')->name('coin.alphabet');
+Route::get('memodailles/alfabetisch{alphabet}', 'CoinController@getByAlphabet')->name('coin.alphabet');
 // toon de memodailles bij de opgegeven plaats
 Route::get('/memodailles/plaats/{town}', 'PennyController@getByTown')->name('coin.town');
 
