@@ -10956,3 +10956,11 @@ header {
      object-fit: contain;
 }
 
+@media screen and (min-width: 1200px) {
+  .penny-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
