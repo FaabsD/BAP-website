@@ -18,9 +18,9 @@ Route::get('/', function () {
 });
 Route::get('/over-ons', 'AboutController@aboutMe')->name('about');
 // verzameling pennies routes
-Route::get('/pennies', 'PennyController@getPennies')->name('pennies');
+Route::get('/pennies', 'PennyController@index')->name('pennies');
 // alleen beschikbaar voor ingelogde beheerder
-Route::get('/pennies/voeg-toe', 'PennyController@addPennyForm')->name('penny.add');
+Route::get('/pennies/voeg-toe', 'PennyController@create')->name('penny.add');
 Route::post('/pennies/verwerken', 'PennyController@handlePennyForm')->name('penny.add.handle');
 Route::get('/pennies/aanpassen/{id}', 'PennyController@updatePenny')->name('penny.update');
 // haal de pennies op bij alfabet
