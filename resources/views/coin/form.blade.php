@@ -1,13 +1,12 @@
 @extends('layouts.master')
 @section('page_title')
-    Penny Toevoegen
+    Memodaille Toevoegen
 @endsection
 @section('content')
-
     <div class="container w-screen my-4">
-        <div class="card"><h2 class="card-header">Penny Toevoegen</h2>
+        <div class="card"><h2 class="card-header">Memodaille Toevoegen</h2>
             <div class="card-body">
-                <form action="{{route('penny.add.handle')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{route('coin.add.handle')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label for="plaats">Plaats</label>
@@ -40,18 +39,6 @@
                         @if($errors->get('omschrijving'))
                             <div class="alert alert-danger">
                                 @foreach($errors->get('omschrijving') as $message)
-                                    <li style="list-style-type: none; padding: 0">{{$message}}</li>
-                                @endforeach
-                            </div>
-                        @endif
-                    </div>
-                    <div class="form-group">
-                        <label for="positie">Positie</label>
-                        <input type="text" name="positie" class="form-control @error('positie') is-invalid @enderror"
-                               value="{{old('positie')}}">
-                        @if($errors->get('positie'))
-                            <div class="alert alert-danger">
-                                @foreach($errors->get('positie') as $message)
                                     <li style="list-style-type: none; padding: 0">{{$message}}</li>
                                 @endforeach
                             </div>
