@@ -7,31 +7,83 @@ use Illuminate\Support\Facades\DB;
 
 class PennyController extends Controller
 {
-    public function getPennies(){
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
         $pennies = DB::table('pressed_pennies')
-            ->orderBy('Plaats','asc')
+            ->orderBy('Plaats', 'asc')
             ->orderBy('Serie', 'asc')
             ->get();
         return view('penny.all-pennies')->with('pennies', $pennies);
     }
 
-    public function addPennyForm(){
-        return view('penny.form');
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
     }
 
-    public function handlePennyForm(){
-        return "hier ga ik het formulier verwerken";
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
     }
 
-    public function updatePenny($id) {
-        return "vanaf hier wil ik de gegevens van de penny met id: ".$id."aanpassen";
+    /**
+     * Display the specified resource.
+     *
+     * @param int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
     }
 
-    public function getByAlphabet($alphabet) {
-        return view('penny.alphabetical')->with('alphabet',$alphabet);
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
     }
 
-    public function getByTown($town) {
-        return "Toon alle Pennies uit ".$town;
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
     }
 }
