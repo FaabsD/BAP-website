@@ -6,22 +6,88 @@ use Illuminate\Http\Request;
 
 class CoinController extends Controller
 {
-    public function getCoins(){
-        return "Hier word mijn verzameling Memodailles getoont";
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        //
     }
-    public function addCoinForm(){
-        return "Hier komt het formulier om een memodaille toe te voegen";
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('coin.form');
     }
-    public function handleCoinForm(){
-        // hier wordt het toevoegen van een memodaille afgehandeld
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $validatedData = $request->validate([
+            'plaats' => 'required|alpha|min:3',
+            'serie' => 'required|max:150',
+            'omschrijving' => 'max:255|different:serie',
+            'alfabet' => 'required|max:1|alpha',
+            'afbeelding' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+
+
+        ]);
+        dd($request->all());
     }
-    public function updateCoin($id) {
-        return "hier update ik de gegevens van een memodaille met id: ".$id;
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
     }
-    public function getByAlphabet($alphabet) {
-        return "Alle memodailles waarvan de plaats begint met " . $alphabet;
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
     }
-    public function getByTown($town) {
-        return "Toon alle Memodailles uit ".$town;
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
     }
 }

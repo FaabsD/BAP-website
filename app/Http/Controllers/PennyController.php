@@ -28,7 +28,7 @@ class PennyController extends Controller
      */
     public function create()
     {
-        //
+        return view('penny.form');
     }
 
     /**
@@ -39,7 +39,17 @@ class PennyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'plaats' => 'required|alpha|min:3',
+            'serie' => 'required|max:150',
+            'omschrijving' => 'max:255|different:serie',
+            'positie' => 'required|min:6|max:7',
+            'alfabet' => 'required|max:1|alpha',
+            'afbeelding' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+
+
+        ]);
+        dd($request->all());
     }
 
     /**
