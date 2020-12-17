@@ -72,6 +72,7 @@ class PennyController extends Controller
     public function edit($id)
     {
         //
+        return view('penny.update_form')->with('id', $id);
     }
 
     /**
