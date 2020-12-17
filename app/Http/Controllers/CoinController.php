@@ -65,7 +65,7 @@ class CoinController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('coin.update_form')->with('id', $id);
     }
 
     /**
