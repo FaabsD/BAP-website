@@ -22,7 +22,7 @@ Route::get('/pennies', 'PennyController@index')->name('pennies');
 // alleen beschikbaar voor ingelogde beheerder
 Route::get('/pennies/voeg-toe', 'PennyController@create')->name('penny.add');
 Route::post('/pennies/verwerken', 'PennyController@store')->name('penny.add.handle');
-Route::get('/pennies/aanpassen/{id}', 'PennyController@updatePenny')->name('penny.update');
+Route::get('/pennies/{id}/aanpassen', 'PennyController@edit')->name('penny.edit');
 // haal de pennies op bij alfabet
 Route::get('pennies/alfabetisch/{alphabet}', 'PennyController@getByAlphabet')->name('pennies.alphabet');
 // toon pennies bij opgegeven plaats
@@ -33,7 +33,7 @@ Route::get('/memodailles', 'CoinController@getCoins')->name('coins');
 // alleen beschikbaar voor ingelogde beheerder
 Route::get('/memodailles/voeg-toe', 'CoinController@create')->name('coin.add');
 Route::post('/memodailles/verwerken', 'CoinController@store')->name('coin.add.handle');
-Route::get('/memodailles/aanpassen/{id}', 'CoinController@updateCoin')->name('coin.update');
+Route::get('/memodailles/{id}/aanpassen', 'CoinController@edit')->name('coin.edit');
 // haal de memodailles op bij alfabet
 Route::get('memodailles/alfabetisch{alphabet}', 'CoinController@getByAlphabet')->name('coin.alphabet');
 // toon de memodailles bij de opgegeven plaats
