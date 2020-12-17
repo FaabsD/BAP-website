@@ -14,7 +14,7 @@
                         {{$penny->Omschrijving}}
                     </p>
                     @if(Auth::check())
-                        <a href="{{route('penny.update', ['id' => $penny->id ])}}" class="btn btn-primary">Pas aan</a>
+                        <a href="{{route('penny.edit', ['id' => $penny->id ])}}" class="btn btn-primary">Pas aan</a>
                     @endif
                 </div>
             </div>
