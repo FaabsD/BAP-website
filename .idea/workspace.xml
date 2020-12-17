@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13952e0-fdbb-43c6-b291-1ee7d9be4fbd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/coin/update_form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CoinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CoinController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PennyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PennyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penny/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penny/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penny/all-pennies.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penny/all-pennies.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,12 +168,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/coin" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\BAP-MD2-periode2\verzameling\resources\views\coin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\BAP-MD2-periode2\verzameling\resources\views\layouts" />
     </key>
@@ -199,7 +205,8 @@
       <workItem from="1607875432956" duration="15687000" />
       <workItem from="1607937344630" duration="16364000" />
       <workItem from="1608046112560" duration="13924000" />
-      <workItem from="1608133034949" duration="20957000" />
+      <workItem from="1608133034949" duration="21557000" />
+      <workItem from="1608209641322" duration="3902000" />
     </task>
     <servers />
   </component>
@@ -217,44 +224,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1184" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606466859662">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1184" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606466859662" />
-    <state x="689" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608135847647">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="689" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608135847647" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1606471809893">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606471809893" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1606471809892">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606471809892" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1606471809892">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606471809892" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1606471809893">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1875" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606471809893" />
-    <state x="793" y="439" key="NewPhpFileDialog" timestamp="1608147069202">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="793" y="439" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608147069202" />
-    <state x="920" y="167" key="SettingsEditor" timestamp="1608144380241">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="920" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608144380241" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1607881189039">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607881189039" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
