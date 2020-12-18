@@ -29,7 +29,7 @@ Route::get('pennies/alfabetisch/{alphabet}', 'PennyController@getByAlphabet')->n
 Route::get('/pennies/plaats/{town}', 'PennyController@getByTown')->name('pennies.town');
 
 // verzameling memodailles
-Route::get('/memodailles', 'CoinController@getCoins')->name('coins');
+Route::get('/memodailles', 'CoinController@index')->name('coins');
 // alleen beschikbaar voor ingelogde beheerder
 Route::get('/memodailles/voeg-toe', 'CoinController@create')->name('coin.add');
 Route::post('/memodailles/verwerken', 'CoinController@store')->name('coin.add.handle');
