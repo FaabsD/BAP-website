@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13952e0-fdbb-43c6-b291-1ee7d9be4fbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/coin/update_form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CoinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CoinController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PennyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PennyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penny/all-pennies.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penny/all-pennies.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +202,8 @@
       <workItem from="1607937344630" duration="16364000" />
       <workItem from="1608046112560" duration="13924000" />
       <workItem from="1608133034949" duration="21557000" />
-      <workItem from="1608209641322" duration="3902000" />
+      <workItem from="1608209641322" duration="4128000" />
+      <workItem from="1608275572729" duration="3548000" />
     </task>
     <servers />
   </component>
