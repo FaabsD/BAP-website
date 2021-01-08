@@ -25,8 +25,8 @@ ingelogde gebruiker kan uploaden, bewerken en verwijderen.
 #### Opmerkingen / Vragen
 geen 
 #### Tips
-_
-####Tops
+geen
+#### Tops
 werkende pagination dus geen oneindig scrollende pagina, heel overzichtelijk.
 
 ---
