@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13952e0-fdbb-43c6-b291-1ee7d9be4fbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/feedback.md" beforeDir="false" afterPath="$PROJECT_DIR$/feedback.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PennyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PennyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/verzameling.sql" beforeDir="false" afterPath="$PROJECT_DIR$/public/db/verzameling.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +177,7 @@
       <recent name="C:\xampp\htdocs\BAP-MD2-periode2\verzameling\resources\views\coin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\BAP-MD2-periode2\verzameling\public" />
       <recent name="C:\xampp\htdocs\BAP-MD2-periode2\verzameling\resources\views\layouts" />
     </key>
   </component>
@@ -203,7 +207,9 @@
       <workItem from="1608133034949" duration="21557000" />
       <workItem from="1608209641322" duration="4128000" />
       <workItem from="1608275572729" duration="3551000" />
-      <workItem from="1610091216767" duration="5289000" />
+      <workItem from="1610091216767" duration="7112000" />
+      <workItem from="1610695962665" duration="607000" />
+      <workItem from="1610697645057" duration="13432000" />
     </task>
     <servers />
   </component>
