@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
+use App\Penny;
 class PennyController extends Controller
 {
     /**
@@ -14,10 +14,12 @@ class PennyController extends Controller
      */
     public function index()
     {
-        $pennies = DB::table('pressed_pennies')
-            ->orderBy('Plaats', 'asc')
-            ->orderBy('Serie', 'asc')
-            ->get();
+//        $pennies = DB::table('pressed_pennies')
+//            ->orderBy('Plaats', 'asc')
+//            ->orderBy('Serie', 'asc')
+//            ->get();
+        $pennies = Penny::orderBy('Plaats', 'asc')
+            ->orderBy('Serie', 'asc')->get();
         return view('penny.all-pennies')->with('pennies', $pennies);
     }
 
