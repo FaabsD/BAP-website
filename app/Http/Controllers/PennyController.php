@@ -19,7 +19,7 @@ class PennyController extends Controller
 //            ->orderBy('Serie', 'asc')
 //            ->get();
         $pennies = Penny::orderBy('Plaats', 'asc')
-            ->orderBy('Serie', 'asc')->get();
+            ->orderBy('Serie', 'asc')->paginate(24);
         return view('penny.all-pennies')->with('pennies', $pennies);
     }
 

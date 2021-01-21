@@ -20,4 +20,5 @@
             </div>
         @endforeach
     </div>
+    {{$pennies->onEachSide(1)->links()}}
 @endsection
