@@ -171,6 +171,7 @@
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
                             </form>
+                            <a href="{{route('admin')}}" class="dropdown-item">Beheer</a>
                         </div>
                     </li>
                 @endguest
