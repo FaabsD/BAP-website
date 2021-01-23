@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\DB;
 use App\Penny;
 class PennyController extends Controller
@@ -51,7 +53,24 @@ class PennyController extends Controller
 
 
         ]);
-        dd($request->all());
+        /** @var  UploadedFile $image  */
+
+        if (isset($validatedData['afbeelding'])) {
+            $image = $validatedData['afbeelding'];
+            $afbeelding = $image->store('pennies', 'public');
+        }
+
+        $penny = new Penny;
+        $penny->Plaats = $validatedData['plaats'];
+        $penny->Serie = $validatedData['serie'];
+        $penny->Omschrijving = $validatedData['omschrijving'];
+        $penny->Positie = $validatedData['positie'];
+        $penny->Alfabet = $validatedData['alfabet'];
+        if (isset($validatedData['afbeelding'])) {
+            $penny->Afbeelding = $afbeelding;
+        }
+        $penny->save();
+        dd($validatedData);
     }
 
     /**
