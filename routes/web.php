@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/over-ons', 'AboutController@aboutMe')->name('about');
+Route::get('/overzicht', 'OverviewController@index')->name('overview');
 // verzameling pennies routes
 Route::get('/pennies', 'PennyController@index')->name('pennies');
 // alleen beschikbaar voor ingelogde beheerder

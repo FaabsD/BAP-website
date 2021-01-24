@@ -144,6 +144,9 @@
                     <a href="{{route('coins')}}" class="nav-link {{ request()->routeIs('coins') ? 'active' : '' }}">Memodailles</a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{route('overview')}}" class="nav-link {{ request()->routeIs('overview') ? 'active' : '' }}">Overzicht verzameling</a>
+                </li>
+                <li class="nav-item">
                     <a href="{{route('about')}}" class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}">Over ons</a>
                 </li>
                 @guest
