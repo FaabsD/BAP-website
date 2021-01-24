@@ -20,7 +20,8 @@
                     <h3 class="card-title">{{$penny->Plaats}}</h3>
                     <h4 class="card-subtitle text-muted mb-2">{{$penny->Serie}}</h4>
                     <p class="card-text">
-                        {{$penny->Omschrijving}}
+                        {{$penny->Omschrijving}}<br>
+                        {{$penny->Positie}}
                     </p>
                     @if(Auth::check())
                         <a href="{{route('penny.edit', ['id' => $penny->id ])}}" class="btn btn-primary">Pas aan</a>
