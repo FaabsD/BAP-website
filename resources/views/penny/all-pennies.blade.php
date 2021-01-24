@@ -3,9 +3,14 @@
     Pressed Pennies
 @endsection
 @section('content')
+    @if(session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+    @endif
     <div class="penny-container container-fluid my-3">
         @foreach($pennies as $penny)
-            <div class="card">
+            <div class="card mt-2 mb-2">
                 @if(!$penny->Afbeelding)
                     <img src="https://via.placeholder.com/500?text=Afbeelding+niet+beschikbaar" alt="" class="card-img-top">
                 @else
@@ -19,6 +24,7 @@
                     </p>
                     @if(Auth::check())
                         <a href="{{route('penny.edit', ['id' => $penny->id ])}}" class="btn btn-primary">Pas aan</a>
+                        <a href="{{route('penny.delete', ['id' => $penny->id])}}" class="btn btn-danger">Verwijder</a>
                     @endif
                 </div>
             </div>

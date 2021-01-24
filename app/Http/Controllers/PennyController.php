@@ -70,7 +70,7 @@ class PennyController extends Controller
             $penny->Afbeelding = $afbeelding;
         }
         $penny->save();
-        dd($validatedData);
+        return redirect('pennies')->with('status', 'Penny toegevoegd');
     }
 
     /**
@@ -92,8 +92,8 @@ class PennyController extends Controller
      */
     public function edit($id)
     {
-        //
-        return view('penny.update_form')->with('id', $id);
+        $penny = Penny::findOrFail($id);
+        return view('penny.update_form')->with('penny', $penny);
     }
 
     /**
@@ -105,7 +105,42 @@ class PennyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validatedData = $request->validate([
+            'plaats' => 'required|alpha|min:3',
+            'serie' => 'required|max:150',
+            'omschrijving' => 'max:255|different:serie',
+            'positie' => 'required|min:6|max:7',
+            'alfabet' => 'required|max:1|alpha',
+            'afbeelding' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+
+        ]);
+        $penny = Penny::find($id);
+        /** @var  UploadedFile $image  */
+        if (isset($validatedData['afbeelding'])) {
+            if (empty($penny->Afbeelding)) {
+                $image = $validatedData['afbeelding'];
+                $afbeelding = $image->store('pennies', 'public');
+            } else {
+                $file = $penny->Afbeelding;
+//                dd($file);
+                Storage::delete('public/' . $file);
+//                dd(Storage::delete('public/' . $file));
+                $image = $validatedData['afbeelding'];
+                $afbeelding = $image->store('pennies', 'public');
+//                dd($penny->Afbeelding);
+            }
+        }
+        $penny->Plaats = $validatedData['plaats'];
+        $penny->Serie = $validatedData['serie'];
+        $penny->Omschrijving = $validatedData['omschrijving'];
+        $penny->Positie = $validatedData['positie'];
+        $penny->Alfabet = $validatedData['alfabet'];
+        if (isset($validatedData['afbeelding'])) {
+            $penny->Afbeelding = $afbeelding;
+        }
+        $penny->save();
+
+        return redirect('pennies')->with('status', 'Penny geüpdate');
     }
 
     /**
@@ -116,6 +151,10 @@ class PennyController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $penny_to_be_deleted = Penny::find($id);
+        $file = $penny_to_be_deleted->Afbeelding;
+        Storage::delete('public/' . $file);
+        $penny_to_be_deleted->forceDelete();
+        return redirect('pennies')->with('status', 'Penny verwijderd');
     }
 }
