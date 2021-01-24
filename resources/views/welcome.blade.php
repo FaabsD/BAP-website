@@ -3,7 +3,7 @@
     Home
 @endsection
 @section('content')
-    {{--<div class="flex flex-row justify-end">
+    <div class="flex flex-row justify-end">
         @if (Route::has('login'))
             <div class="">
                 @auth
@@ -16,7 +16,7 @@
                     @endif
                 @endauth
             </div>
-        @endif--}}
+        @endif
     <main class="welcome">
         <section class="welcome__section1">
             <h2 class="section1__head">Welkom wat wilt u bekijken?</h2>
