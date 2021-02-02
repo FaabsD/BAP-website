@@ -157,4 +157,17 @@ class PennyController extends Controller
         $penny_to_be_deleted->forceDelete();
         return redirect('pennies')->with('status', 'Penny verwijderd');
     }
+
+    /**
+     * Show pennies on alphabet
+     * @param $alphabet
+     * @return \Illuminate\Http\Response
+     */
+    public function getByAlphabet($alphabet)
+    {
+        $pennies = Penny::where('Alfabet', $alphabet)->orderBy('Plaats', 'asc')->orderBy('Serie', 'asc')->paginate(24);
+        $vars = array("pennies" => $pennies, "alphabet" => $alphabet);
+
+        return view('penny.alphabetical')->with($vars);
+    }
 }
