@@ -21,7 +21,7 @@ Route::get('/overzicht', 'OverviewController@index')->name('overview');
 // verzameling pennies routes
 Route::get('/pennies', 'PennyController@index')->name('pennies');
 // alleen beschikbaar voor ingelogde beheerder
-Route::get('/pennies/voeg-toe', 'PennyController@create')->name('penny.add');
+Route::get('/pennies/voeg-toe', 'PennyController@create')->name('penny.add')->middleware('auth');
 Route::post('/pennies/verwerken', 'PennyController@store')->name('penny.add.handle');
 Route::get('/pennies/{id}/aanpassen', 'PennyController@edit')->name('penny.edit')->middleware('auth');
 Route::post('/pennies/{id}/updaten', 'PennyController@update')->name('penny.update');
