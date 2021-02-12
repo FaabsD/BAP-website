@@ -28,8 +28,7 @@ Route::post('/pennies/{id}/updaten', 'PennyController@update')->name('penny.upda
 Route::get('/pennies/{id}/delete', 'PennyController@destroy')->name('penny.delete');
 // haal de pennies op bij alfabet
 Route::get('pennies/alfabetisch/{alphabet}', 'PennyController@getByAlphabet')->name('pennies.alphabet');
-// toon pennies bij opgegeven plaats
-Route::get('/pennies/plaats/{town}', 'PennyController@getByTown')->name('pennies.town');
+
 
 // verzameling memodailles
 Route::get('/memodailles', 'CoinController@index')->name('coins');
@@ -39,14 +38,12 @@ Route::post('/memodailles/verwerken', 'CoinController@store')->name('coin.add.ha
 Route::get('/memodailles/{id}/aanpassen', 'CoinController@edit')->name('coin.edit')->middleware('auth');
 // haal de memodailles op bij alfabet
 Route::get('memodailles/alfabetisch{alphabet}', 'CoinController@getByAlphabet')->name('coin.alphabet');
-// toon de memodailles bij de opgegeven plaats
-Route::get('/memodailles/plaats/{town}', 'PennyController@getByTown')->name('coin.town');
 
 // login route
 Route::get('/login', 'LoginController@getLoginForm')->name('login');
 
 Auth::routes([
-    'register' => true
+    'register' => false
 ]);
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/home', 'HomeController@index')->name('home');
