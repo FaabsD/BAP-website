@@ -10956,11 +10956,32 @@ header {
      object-fit: contain;
 }
 
-@media screen and (min-width: 1200px) {
+.navbar-expand .navbar-nav .nav-link {
+  padding-left: 0.11em !important;
+  padding-right: 0.11em !important;
+}
+
+.nav-alpha {
+  background-color: #006767;
+}
+
+@media screen and (min-width: 1024px) {
   .penny-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .penny-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .penny-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
