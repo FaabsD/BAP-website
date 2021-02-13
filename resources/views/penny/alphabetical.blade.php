@@ -19,6 +19,10 @@
                         {{$penny->Omschrijving}}<br>
                         {{$penny->Positie}}
                     </p>
+                    @if(Auth::check())
+                        <a href="{{route('penny.edit', ['id' => $penny->id ])}}" class="btn btn-primary">Pas aan</a>
+                        <a href="{{route('penny.delete', ['id' => $penny->id])}}" class="btn btn-danger">Verwijder</a>
+                    @endif
                 </div>
             </div>
         @endforeach
